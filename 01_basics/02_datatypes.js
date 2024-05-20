@@ -21,5 +21,6 @@ console.log(3
     // symbol =>  unique (defined uniqueness of any variable)
 
     // object =>  
+        console.log(typeof "Avinash") //string
         console.log(typeof undefined); // undefined
         console.log(typeof null); // object
