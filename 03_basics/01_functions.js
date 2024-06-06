@@ -44,13 +44,33 @@ console.log("S");
 //  console.log(loginUserMessage("Avinash")); //Avinash Just Logged in
 //  console.log(loginUserMessage()); // undefined Just Logged in - when no value pass
 
-function loginUserMessage(username){
-    if (username===undefined){
+// function loginUserMessage(username){
+//     if (username===undefined){
+//         console.log("please enter username")
+//         return
+//     }
+//     return `${username} Just Logged in`
+// }
+
+// console.log(loginUserMessage("avinash"));
+
+// function loginUserMessage(username){
+//     if (!username){
+//         console.log("please enter username")
+//         return
+//     }
+//     return `${username} Just Logged in`
+// }
+
+// console.log(loginUserMessage("avinash"));
+
+
+function loginUserMessage(username="Panchal"){
+    if (!username){
         console.log("please enter username")
         return
     }
     return `${username} Just Logged in`
 }
 
-console.log(loginUserMessage("avinash"));
-
+console.log(loginUserMessage());// Panchal Just Logged in
