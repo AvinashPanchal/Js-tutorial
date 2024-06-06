@@ -65,12 +65,59 @@ console.log("S");
 // console.log(loginUserMessage("avinash"));
 
 
-function loginUserMessage(username="Panchal"){
-    if (!username){
-        console.log("please enter username")
-        return
-    }
-    return `${username} Just Logged in`
+// function loginUserMessage(username="Panchal"){
+//     if (!username){
+//         console.log("please enter username")
+//         return
+//     }
+//     return `${username} Just Logged in`
+// }
+
+// console.log(loginUserMessage());// Panchal Just Logged in
+
+// function calculateCartPrice(num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(3));
+
+
+//rest operator
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 300, 400)); //[ 200, 300, 400 ]
+
+// function calculateCartPrice(valu1, valu2, ...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 300, 400, 2000)); //[ 400, 2000 ]
+
+const user = {
+    username:"avinash",
+    price: 199
 }
 
-console.log(loginUserMessage());// Panchal Just Logged in
+function handleObject(anyobject){ 
+    console.log(`name is ${anyobject.username} and price is ${anyobject.price}`);
+}
+// handleObject(user) //name is avinash and price is 199
+
+handleObject (
+    {
+      username:"Amit",
+      price: 399
+    }
+    
+)  // name is Amit and price is 399
+
+const newArray = [100, 200, 600, 300]
+
+function arrayNew(getArray){
+    return getArray[1]
+
+}
+
+console.log(arrayNew(newArray)); //200
+   
+
+
