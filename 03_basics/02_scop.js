@@ -41,18 +41,24 @@
 
 // function representation 1
 
+console.log(addOne(5)); // 5
+
 function addOne(num){
     return num+1
 }
 
-addOne(5);
+//addOne(5)
+
 
 // function representation 2
+
+console.log(addTwo(6)) // Error - Cannot access 'addTwo' JS Hoisting
+
 const addTwo = function(num){
     return num+1
 }
 
-addTwo(5)
+// addTwo(6)
 
 
 
