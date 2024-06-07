@@ -35,7 +35,37 @@
 //const addTwo = (num1, num2) => num1 + num2
 //const addTwo = (num1, num2) => (num1 + num2)
 
-const addTwo = (num1, num2) => ({username: "Avinash"})
+// const addTwo = (num1, num2) => ({username: "Avinash"})
 
-console.log(addTwo(3, 4)); //7
+// console.log(addTwo(3, 4)); //7
+
+
+
+// Immediately invoked function(IIFE) - global scope variable ke polution ko htane ke liye 
+
+// function chai(){
+//named IIFE
+//     console.log("DB Connected");
+// }
+// chai()
+
+(function chai(){
+    console.log("DB Connected");
+})();
+
+(
+    ()=>{
+        console.log("DB Connected again")
+    }
+)();
+
+(
+    (name)=>{
+        console.log(`DB Connected again ${name}`)
+    }
+)("Avinash");
+
+
+
+
 
